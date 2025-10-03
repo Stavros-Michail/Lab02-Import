@@ -97,7 +97,9 @@ plastic_data_all %>%
 ```{r Ex2, message = FALSE}
 # Write your code here to answer exercise 2
 
-
+total_mismanaged_plastic <- 
+  plastic_data_all %>% 
+  mutate(mismanaged_plastic_ocean.x * population)
 
 ```
 
